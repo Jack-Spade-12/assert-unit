@@ -2,6 +2,10 @@
  * History
  * 		
  * 		December 2, 2023 - S. Cortel - Created
+ *      December 8, 2023 - S. Cortel - Moved to a different project;
+ *                                     Changed to a public static class instead
+ *                                     of public;
+ *                                     Added assertEquals() for List<String>;
  * 
  * Purpose
  * 		

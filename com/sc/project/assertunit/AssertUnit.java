@@ -26,7 +26,7 @@ public class AssertUnit {
      * @param actualResult to check in <code>boolean</code> form
      * @param definition of the method to test
      */
-    static void assertEquals (boolean expectedResult, boolean actualResult, String definition) {
+    public static void assertEquals (boolean expectedResult, boolean actualResult, String definition) {
         if (expectedResult != actualResult) {
             throwFailed(expectedResult, actualResult, definition);
         }

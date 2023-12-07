@@ -17,7 +17,7 @@
 package com.sc.project.assertunit;
 import java.util.List;
 
-public static class AssertUnit {
+public class AssertUnit {
 
     /**
      * This method checks if the values are equal
@@ -122,7 +122,7 @@ public static class AssertUnit {
      * @param actualResult to check in <code>List<String></code> form
      * @param definition of the method to test
      */
-    private void assertEquals(List<String> expectedResult, List<String> actualResult, String definition) {
+    public void assertEquals(List<String> expectedResult, List<String> actualResult, String definition) {
         assertEquals(expectedResult.toArray(new String[expectedResult.size()]), 
             actualResult.toArray(new String[actualResult.size()]), definition);
     }

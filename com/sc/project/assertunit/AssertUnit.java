@@ -6,6 +6,8 @@
  *                                     Changed to a public static class instead
  *                                     of public;
  *                                     Added assertEquals() for List<String>;
+ *      December 10, 2023 - S. Cortel - Changed access modifier for assertEquals()
+ *                                      for List<String> to public static
  * 
  * Purpose
  * 		
@@ -122,7 +124,7 @@ public class AssertUnit {
      * @param actualResult to check in <code>List<String></code> form
      * @param definition of the method to test
      */
-    public void assertEquals(List<String> expectedResult, List<String> actualResult, String definition) {
+    public static void assertEquals (List<String> expectedResult, List<String> actualResult, String definition) {
         assertEquals(expectedResult.toArray(new String[expectedResult.size()]), 
             actualResult.toArray(new String[actualResult.size()]), definition);
     }
